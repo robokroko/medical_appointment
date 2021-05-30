@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity"
+    android:background="@color/background1">
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:columnCount="3"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="32dp">
+
+        <!--//String identifier, String status, String cancelationReason, String serviceCategory, String serviceType,
+        //String specialty, String appointmentType, String reasonCode, String reasonReference, int priority,
+        //String description, String supportingInformation, Date start, Date end, int minutesDuration,
+        //String slot, Date created, String comment, String patientInstruction, String basedOn,
+        //Participant participant, String requestedPeriod)-->
+
+        <TextView
+            android:id="@+id/textStatus"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:text="Státusz"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:minHeight="35dp" />
+
+        <TextView
+            android:id="@+id/textAppointmentType"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:text="Típus"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editAppointmentType"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textdescription"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:text="Leírás"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textStart"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:text="Kezdés"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textEnd"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:text="Zárás"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editEnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:clickable="false"
+            android:cursorVisible="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp" />
+
+        <TextView
+            android:id="@+id/textParticipant"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="0"
+            android:text="Résztvevők"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/editParticipant"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_row="5"
+            android:layout_column="1"
+            android:layout_margin="8dp"
+            android:background="@color/white1"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp" />
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_columnWeight="1"
+        android:layout_margin="32dp"
+        android:background="@color/red1"
+        android:onClick="deleteOnClick"
+        android:text="Törlés"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridLayout"
+        android:visibility="invisible"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="32dp">
+
+        <Button
+            android:id="@+id/buttonCancel"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:text="Mégse"
+            android:layout_margin="5dp"
+            android:background="@color/white1"
+            android:onClick="cancelOnClick"/>
+
+        <Button
+            android:id="@+id/buttonSave"
+            android:layout_height="wrap_content"
+            android:layout_row="0"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:text="Mentés"
+            android:layout_margin="5dp"
+            android:background="@color/colorAccent"
+            android:onClick="saveOnClick"/>
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

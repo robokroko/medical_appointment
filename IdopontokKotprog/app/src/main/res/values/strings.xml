@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Időpontok</string>
+    <string name="action_settings">Névjegy</string>
+    <string-array name="status_array">
+        <item>Függőben</item>
+        <item>Felvéve</item>
+        <item>Megérkezett</item>
+        <item>Teljesítve</item>
+        <item>Visszavonva</item>
+    </string-array>
+
+</resources>

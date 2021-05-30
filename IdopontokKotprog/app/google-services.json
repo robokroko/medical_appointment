@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "454855180695",
+    "project_id": "mobilkotprog",
+    "storage_bucket": "mobilkotprog.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:454855180695:android:bd5e6271a2362d6eb0c4d2",
+        "android_client_info": {
+          "package_name": "com.example.idopontokkotprog"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "454855180695-29jngvie41ffqt6nibamtat3pefc3q3t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.idopontokkotprog",
+            "certificate_hash": "8faaf1b9e6c18e765e3165d6369a2b48ad3e9b5e"
+          }
+        },
+        {
+          "client_id": "454855180695-ktmkc1b1scsfvjoav6825099ei9ltapk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDf_URXFy2a0iApw9SdU6tdTh2lXYnjlnI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "454855180695-ktmkc1b1scsfvjoav6825099ei9ltapk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
